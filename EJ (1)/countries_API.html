@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info - HelpHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #020202;
+        }
+        .country-info {
+            margin-top: 20px;
+        }
+        .country-info img {
+            width: 200px;
+            height: auto;
+        }
+        .country-details {
+            margin-top: 15px;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="HelpHub Logo" style="width: 100px; height: auto;">
+    </header>
+    <nav>
+        <a href="index (1).html" style="color: white;">Home</a>
+        <a href="charites.html" style="color: white;">Find Charities</a>
+        <a href="charity_profile_1.html" style="color: white;">Charity 1</a>
+        <a href="charity_profile_2.html" style="color: white;">Charity 2</a>
+        <a href="charity_profile_3.html" style="color: white;">Charity 3</a>
+        <a href="countries_API.html" style="color: white;">Country Info</a>
+    </nav>
+
+    <h1>Learn About the Countries We Support!</h1>
+    
+    <label for="country-select">Choose a Country:</label>
+    <select id="country-select">
+        <option value="">--Select a Country--</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="India">India</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Australia">Australia</option>
+    </select>
+
+    <div class="country-info" id="country-info">
+        <p><strong>We operate and support these countries! Select one to learn more about it!</strong></p>
+        <br>
+        <h2><strong>Thank you for choosing HelpHub, we help YOU make an impact!</strong></h2>
+    </div>
+
+    <script src="country_info.js"></script>
+</body>
+</html>
