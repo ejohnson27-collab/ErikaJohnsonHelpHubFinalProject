@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to HelpHub!</title>
+    <style>
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #extra-details {
+            display: none; 
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .volunteer-details {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="HelpHub Logo" style="width: 100px; height: auto;">
+    </header>
+    <nav>
+        <a href="index (1).html">Home</a>
+        <a href="charites.html">Find Charities</a>
+        <a href="charity_profile_1.html">Charity 1</a>
+        <a href="charity_profile_2.html">Charity 2</a>
+        <a href="charity_profile_3.html">Charity 3</a>
+        <a href="countries_API.html">Country Info</a>
+    </nav>
+    <div>
+        <h1 class="charity-name">Sophie's Squad</h1>
+        <hr>
+        <h2>Learn about Sophie's Squad's mission, locations, and how to get involved!</h2>
+        <ul style="list-style-type: disc; padding-left: 20px;">
+            <li>Sophie's Squad is a nonprofit organization dedicated to improving the mental health of athletes by raising awareness and providing support for mental well-being.</li>
+            <li>Mission: Founded in 2021 with the mission to improve the mental health of athletes from youth to college levels by raising awareness of mental health issues and removing the stigma associated with seeking help.</li>
+            <li>Get involved by <a href="https://www.sophiessquad.org/donate" target="_blank">donating</a>, volunteering at events near you, and talking about mental health in order to further destigmatize it for female athletes!</li>
+        </ul>
+
+        <div style="text-align: center;">
+            <img src="ssphoto.jpg" alt="Photo of an honorable donation" style="width: 300px; height: auto;">
+        </div>
+        
+        <div>
+            <h2>Click the button below to volunteer for this charity</h2>
+            <button id="volunteer-button">Volunteer Now</button>
+
+            <p>By clicking the button above, you will be prompted to enter your contact information, and the charity will reach out to you.</p>
+        </div>
+
+        <div id="charity-details"></div>
+
+    </div>
+
+    <script src="charity_profile.js"></script>
+</body>
+</html>
